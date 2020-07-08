@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/index2.css"> 
+</head>
+<body>
+    <div class="wrapper">
+        <div class="mt10">
+            <div class="show-path">
+                <h3>你现在的位置:</h3>
+                <ul>
+                  <a href="#">首页></a>
+                  <a href="#">供应信息></a>
+                  <a href="#">机械网></a>
+                  <a href="#">机械></a>
+                  供应不锈钢液压切断冲湖机
+                  <span class="nav-login">
+                    <a href="">登录</a>
+                    <a href="">注册</a>
+                  </span>
+                </ul>                               
+            </div>
+            <div class="wrapper mt10">
+                <!-- 大左边 -->
+                <div class="summary clear">
+                    <div class="item-info">
+                        <!-- 左图 -->
+                        <div class="left">
+                            <div class="gallery" id="box">
+                                <!-- <div id="mid_pos"></div> -->
+                                
+                                <div class="mid_div" id="small">
+                                    <img src="http://www.cebn.cn/file/upload/202007/06/16225522382190.jpg.middle.jpg" alt="">
+                                    <!-- 遮罩层 -->
+                                    <div id="mask"></div>
+                                </div>
+                                <!-- 大图区 -->
+                                <div id="big">
+                                    <img src="http://www.cebn.cn/file/upload/202007/06/16225522382190.jpg.middle.jpg" alt="" id="bigImg">
+                                </div>
+                               
+                                <ul class="clear">
+                                    <li><img src="http://www.cebn.cn/file/upload/202007/06/16225522382190.jpg.thumb.jpg" alt=""></li>
+                                    <li><img src="http://www.cebn.cn/file/upload/202007/06/16232851382190.jpg.thumb.jpg" alt=""></li>
+                                    <li><img src="http://www.cebn.cn/file/upload/202007/06/16234466382190.jpg.thumb.jpg" alt=""></li>
+                                    <li><img src="http://www.cebn.cn/skin/dtrdgou/image/zoom.png" alt=""></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <!-- 右文字 -->
+                        <div class="right">
+                            <div class="wrap">
+                                <div class="title-new">
+                                    <h3 id="title">供应不锈钢液压切断冲湖机</h3>
+                                    <p>本产品广泛用于冲不锈钢防盗网、楼梯扶手、护栏、各类鞋架、衣架不锈钢管（圆、方管）、锌钢、彩钢、铁管、铝合金、货架等冲孔</p>
+                                </div>
+                                <ul class="promo-meta clear">
+                                    <li>
+                                        <span>产品单价:</span>
+                                        <strong class="promo-price">
+                                            <em class="rmb">$</em>
+                                            <em class="rmb-num">6500.00</em>
+                                            元/台
+                                        </strong>
+                                    </li>
+                                    <li>
+                                        <span>品拍名称:</span>
+                                        <p>拓刚机械</p>
+                                    </li>
+                                    <li>
+                                        <span>产地:</span>
+                                        <p>广东 佛山 南海区</p>
+                                    </li>
+                                    <li>
+                                        <span>产品类别:</span>
+                                        <p>机械</p>
+                                    </li>
+                                    <li>
+                                        <span>有效期:</span>
+                                        <p>长期有效</p>
+                                    </li>
+                                    <li>
+                                        <span>发布事件:</span>
+                                        <p>2020-07-07 09:46</p>
+                                    </li>
+                                    <li class="counter">
+                                        <div class="browse-counter clear">
+                                            <a href="">
+                                                <b>10</b>
+                                                <span>访问人数</span>
+                                            </a>
+                                        </div>
+                                        <div class="sell-counter clear">
+                                            <a href="">
+                                                <b>0</b>
+                                                <span>累计评论</span>
+                                            </a>
+                                        </div>
+                                        <div class="rate-counter"><img src="http://www.cebn.cn/skin/dtrdgou/image/sell/sell-ewm.jpg" width="94" height="48" alt=""></div>
+                                        <div></div>
+                                    </li>
+                                </ul>
+                                <div class="roduct-button">
+            <button class="button-gou addToCart">加入购物车</button>
+            <button class="button-gou showCart">进入购物车</button>
+            <button class="button-gou delProduct">删除该商品</button>
+            <button class="button-gou-num addNum">+</button>
+            <button class="button-gou-num cutNum">-</button>
+                                    <!-- <a class="button-gou" href="">
+                                        加入购物车
+                                    </a>
+                                    <a class="button-gou-num" href="">+
+                                    </a>
+                                    <a class="button-gou-num" href="">-
+                                    </a> -->
+                                </div>
+                                <div class="clear"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+    <!-- <button class="button-gou addToCart">加入购物车</button>
+    <button class="showCart">点击进入购物车</button>
+    <button class="button-gou delProduct">删除该商品</button>
+    <button class="button-gou-num addNum">+</button>
+    <button class="button-gou-num cutNum">-</button> -->
+
+            <div class="clear"></div>
+            <div class="detail-content clear"></div>
+        </div>
+    </div>
+    <script src="../js/public.js"></script>
+    <script src="jquery-1.12.4.js"></script>
+    <script>
+
+                // 1 在详情页加入购物车功能
+            $('.addToCart').click(function(){           
+            $.get('../interface/addwq.php',{
+                id:30000,
+                img:"../images/chabei.jpg",
+                price:56,
+                name:"茶具"
+            },function(data){
+                var json = JSON.parse(data);
+                if(json.code==1){
+                    alert('添加商品成功');
+                }
+            })
+        })
+
+        /*2 购物车页面显示加入购物车的商品
+        接口:./interface/showlist.php
+        */
+        $('.showCart').click(function(){
+            $.get('./interface/showlist.php',function(data){
+                var json = JSON.parse(data);
+                if(json.code==0){
+                    alert('购物车里面空空的')
+                }else{
+                    alert('你买了的东西是'+JSON.stringify(json.data))
+                }
+            })
+        })
+
+                        /* 
+        3 删除购物车里面的指定id的商品
+        接口:./interface/delwq.php?id=10000       
+        */
+        $('.delProduct').click(function(){
+            $.get('../interface/delwq.php',{
+                id:30000
+            },function(data){
+                var json = JSON.parse(data);
+                if(json.code==1){
+                    alert('商品删除成功')
+                }
+            })
+        })
+
+                /* 
+        4 更新商品数量之增加
+        接口:./interface/updatewq.php?id=10000
+        */
+        $('.addNum').click(function(){
+            $.get('../interface/updatewq.php',{
+                id:1000,
+                type:'add'
+            },function(data){
+                var json = JSON.parse(data);
+                if(json.code==1){
+                    alert('商品数量增加成功')
+                }
+            })
+        })
+
+        /*
+        5 更新商品数量之减少
+        接口:./interface/updatewq.php?id=30000
+        */
+        var num = 10;
+        $('.cutNum').click(function(){
+            num--;
+            if(num<=0){
+                //如果商品数量剪完以后小于等于0,说明想删除商品,调用删除接口:./interface/delwq.php?id=10000
+            }else{
+                $.get('../interface/updatewq.php?id=1000',{
+                    type:"cut"
+                },function(data){
+                    var json = JSON.parse(data);
+                    if(json.code==1){
+                        alert('商品数量减少成功')
+                    }
+                })
+            }            
+        })
+
+        var box = document.getElementById('box')
+        var mask = document.getElementById('mask')
+        var big = document.getElementById('big')
+        var bigImg = document.getElementById('bigImg')
+        // console.log(box)
+        // console.log(mask)
+        // console.log(big)
+        // console.log(bigImg)
+
+        // 鼠标移入
+        box.onmouseenter = function(){
+            // mask显示 遮罩层
+            mask.style.display = 'block'
+            // big显示 右边大图
+            big.style.display = 'block'
+        }
+        //鼠标移除
+        box.onmouseleave = function(){
+            // mask隐藏 遮罩层
+            mask.style.display = 'none'
+            // big隐藏 右边大图
+            big.style.display = 'none'
+        }
+
+        //鼠标在box 物品上 移动
+        box.onmousemove = function(eve){
+            var e = eve || event
+            //鼠标定位到 遮罩层的正中间
+            //右边大图 移动
+              //遮罩向左
+              //img向右
+            var l = e.pageX - this.offsetLeft - mask.clientWidth/2  
+            var t = e.pageY - this.offsetTop - mask.clientHeight/2
+            var maxL = this.clientWidth - mask.clientWidth
+            var maxT = this.clientHeight - mask.clientHeight
+            // console.log(l)
+            // console.log(t)
+             l = l < 0 ? 0 :(l > maxL ? maxL : l)
+             t = t < 0 ? 0 :(t > maxT ? maxT : t)
+
+            //遮罩层位置 
+            mask.style.left = l + 'px' 
+            mask.style.top = t + 'px' 
+// bigImgLeft / l = (大图的宽度-大图可视区宽度)/(小图宽度-mask的宽度) = 大图宽度/小图宽度 = 大图可视区宽度 / 小图可视区（mask）宽度
+//bigImgLeft  = (大图宽度/小图宽度 )*l    
+            bigImg.style.left = -(bigImg.clientWidth / this.clientWidth) * l + 'px'
+            bigImg.style.top = -(bigImg.clientHeight / this.clientHeight) * t + 'px'
+            // console.log(bigImg.style.left)
+        }
+
+
+
+
+    </script>
+</body>
+</html>
